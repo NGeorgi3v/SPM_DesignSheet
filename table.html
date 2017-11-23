@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Secured Password Manager</title>
+	<link rel="stylesheet" href="./css/materialize.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<!-- NAVIGATION -->
+	<nav>
+		<div class="nav-wrapper">
+			<form>
+				<div class="input-field col s11 blue lighten-2">
+					<input id="search" type="search" placeholder="Търсене..." required="">
+					<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+					<i class="material-icons">close</i>
+				</div> <!-- ./input-field -->
+			</form>
+
+			<ul class="side-nav blue-grey darken-2" id="side_nav">
+				<center>
+					<img src="./imgs/avatar.png" id="avatar" class="img-responsive circle" alt="Аватар">
+					<p id="side_username">Име на потребител</p>
+				</center>
+				<hr class="divider blue-grey darken-3"></hr>
+				<li class="active">
+					<a href="#" class="white-text waves-effect"> 
+						<i class="material-icons white-text">home</i> Началo
+					</a>
+				</li>
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">person_pin</i> Моят профил
+					</a>
+				</li>
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">vpn_key</i> Моите пароли
+					</a>
+				</li>
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">exit_to_app</i> Изход
+					</a>
+				</li>
+
+				<hr class="divider blue-grey darken-3"></hr>
+				<!-- Admin Tools -->
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">code</i> Администратори
+					</a>
+				</li>
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">people</i> Потребители
+					</a>
+				</li>
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">security</i> Пароли
+					</a>
+				</li>
+			</ul>
+		</div><!-- ./nav-wrapper -->
+	</nav>
+	<br>
+	<br>
+	<br>
+	<!-- MAIN CONTENT -->
+	<div class="container">
+        <h4 class="blue-grey-text text-darken-2">Таблица със съдържание</h4>
+        <table class=" bordered">
+            <thead class="blue-grey darken-2 white-text">
+                <tr>
+                    <th colspan="2">Допълнителна информация</th>
+                </tr>
+            </thead>
+    
+            <tbody class="grey lighten-3 blue-grey-text text-darken-2">
+                <tr>
+                    <td>Цяло име</td>
+                    <td>Някакво име тука</td>
+                </tr>
+                <tr>
+                    <td>Град/село</td>
+                    <td>Варна</td>
+                </tr>
+                <tr>
+                    <td>Брой запазени пароли</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Статус на акаунта</td>
+                    <td>Потвърден</td>
+                </tr>
+                <tr>
+                    <td>Допълнително описание</td>
+                    <td>Някво си описание....</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h4 class="blue-grey-text text-darken-2" >Таблица с action бутони</h4>
+        <table class="responsive-table bordered">
+                <thead >
+                    <tr class="blue-grey darken-2 white-text">
+                        <th>Сайт</th>
+                        <th>Потребителско име</th>
+                        <th>Парола</th>
+                        <th>Последна промяна</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+        
+                <tbody class="grey lighten-3 blue-grey-text text-darken-2">
+                    <tr>
+                        <td>abv</td>
+                        <td><a class="waves-effect btn blue lighten-1 modal-trigger" data-target="modal">ПОКАЖИ</a></td>
+                        <td><a class="waves-effect btn blue lighten-1" data-target="modal">ПОКАЖИ</a></td>
+                        <td>21 март 2017 12:10:31ч.</td>
+                        <td>
+                            <a class="waves-effect btn blue lighten-1">
+                                <i class="material-icons">mode_edit</i>
+                            </a>
+                            <a class="waves-effect btn blue lighten-1">
+                                <i class="material-icons">close</i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- MODAL FOR ACTION BUTTONS -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="input-field">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Парола</label>
+                    </div><!-- ./input-field -->
+                </div><!-- ./modal-content -->
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Виж</a>
+                </div><!-- ./modal-footer -->
+            </div><!-- ./modal -->
+	</div><!-- ./container -->
+
+	<br>
+	<br>
+	<br>
+
+	<!-- FOOTER -->
+	<footer class="page-footer blue lighten-2">
+		<div class="footer-copyright blue lighten-1">
+			<div class="container white-text flow-text">
+				<p>Всички права са запазени &copy; 2016-2017 Design & Code By Electric Crew</p>
+			</div><!-- ./container -->
+		</div><!-- ./page-footer -->
+	</footer>
+	
+	<div class="fixed-action-btn">
+		<a href="#" class="btn-floating button-collapse blue lighter-2 btn-large hide-on-med-and-down pulse waves-effect" data-activates="side_nav"><i class="large material-icons">menu</i></a>
+		<a href="#" class="btn-floating button-collapse blue lighter-2 btn-small hide-on-large-only pulse waves-effect" data-activates="side_nav"><i class="large material-icons">menu</i></a>
+	</div><!-- ./fixed-action-btn -->
+
+
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/materialize.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Secured Password Manager</title>
+	<link rel="stylesheet" href="./css/materialize.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<!-- NAVIGATION -->
+	<nav>
+		<div class="nav-wrapper">
+			<form>
+				<div class="input-field col s11 blue lighten-2">
+					<input id="search" type="search" placeholder="Търсене..." required="">
+					<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+					<i class="material-icons">close</i>
+				</div> <!-- ./input-field -->
+			</form>
+
+			<ul class="side-nav blue-grey darken-2" id="side_nav">
+				<center>
+					<img src="./imgs/avatar.png" id="avatar" class="img-responsive circle" alt="Аватар">
+					<p id="side_username">Име на потребител</p>
+				</center>
+				<hr class="divider blue-grey darken-3"></hr>
+				<li class="active">
+					<a href="#" class="white-text waves-effect"> 
+						<i class="material-icons white-text">home</i> Началo
+					</a>
+				</li>
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">person_pin</i> Моят профил
+					</a>
+				</li>
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">vpn_key</i> Моите пароли
+					</a>
+				</li>
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">exit_to_app</i> Изход
+					</a>
+				</li>
+
+				<hr class="divider blue-grey darken-3"></hr>
+				<!-- Admin Tools -->
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">code</i> Администратори
+					</a>
+				</li>
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">people</i> Потребители
+					</a>
+				</li>
+				<li>
+					<a href="#" class="waves-effect">
+						<i class="material-icons">security</i> Пароли
+					</a>
+				</li>
+			</ul>
+		</div><!-- ./nav-wrapper -->
+	</nav>
+	<br>
+	<br>
+	<br>
+	<!-- MAIN CONTENT -->
+	<div class="container">
+		<div class="row">
+            <div class="col s12 offset-s0 m6 offset-m3 l6 offset-l3 ">
+                <div class="form card-panel">
+                    <div class="form-head blue white-text">
+                        <h4 class="flow-text">Заглавие на форма</h4>
+                    </div><!-- ./form-head -->
+                    <div class="form-body">
+                        <div class="input-field">
+                            <input id="first_name" type="text" class="validate" >
+                            <label for="first_name blue-text">Име</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Фамилия</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="nickname" type="text" class="validate">
+                            <label for="nickname">Никнейм</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Имейл</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Парола</label>
+                        </div><!-- ./input-field -->
+                    </div><!-- ./form-body -->
+                    <div class="form-footer">
+                        <a class="btn btn-large waves-effect blue">Регистрация</a>
+                    </div><!-- ./form-footer -->
+                </div><!-- ./form -->
+            </div><!-- ./col -->
+        </div><!-- ./row -->
+	</div><!-- ./container -->
+
+	<br>
+	<br>
+	<br>
+
+	<!-- FOOTER -->
+	<footer class="page-footer blue lighten-2">
+		<div class="footer-copyright blue lighten-1">
+			<div class="container white-text flow-text">
+				<p>Всички права са запазени &copy; 2016-2017 Design & Code By Electric Crew</p>
+			</div><!-- ./container -->
+		</div><!-- ./page-footer -->
+	</footer>
+	
+	<div class="fixed-action-btn">
+		<a href="#" class="btn-floating button-collapse blue lighter-2 btn-large hide-on-med-and-down pulse waves-effect" data-activates="side_nav"><i class="large material-icons">menu</i></a>
+		<a href="#" class="btn-floating button-collapse blue lighter-2 btn-small hide-on-large-only pulse waves-effect" data-activates="side_nav"><i class="large material-icons">menu</i></a>
+	</div><!-- ./fixed-action-btn -->
+
+
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/materialize.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
