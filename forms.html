@@ -78,23 +78,23 @@
                     </div><!-- ./form-head -->
                     <div class="form-body">
                         <div class="input-field">
-                            <input id="first_name" type="text" class="validate" >
+                            <input id="first_name" type="text" class="validate"  required>
                             <label for="first_name blue-text">Име</label>
                         </div><!-- ./input-field -->
                         <div class="input-field">
-                            <input id="last_name" type="text" class="validate">
+                            <input id="last_name" type="text" class="validate" required>
                             <label for="last_name">Фамилия</label>
                         </div><!-- ./input-field -->
                         <div class="input-field">
-                            <input id="nickname" type="text" class="validate">
+                            <input id="nickname" type="text" class="validate" required>
                             <label for="nickname">Никнейм</label>
                         </div><!-- ./input-field -->
                         <div class="input-field">
-                            <input id="email" type="email" class="validate">
+                            <input id="email" type="email" class="validate" required>
                             <label for="email">Имейл</label>
                         </div><!-- ./input-field -->
                         <div class="input-field">
-                            <input id="password" type="password" class="validate">
+                            <input id="password" type="password" class="validate" required>
                             <label for="password">Парола</label>
                         </div><!-- ./input-field -->
                     </div><!-- ./form-body -->
@@ -104,6 +104,100 @@
                 </div><!-- ./form -->
             </div><!-- ./col -->
         </div><!-- ./row -->
+        <h1>SPLIT FORMS ...</h1>
+        <div class="row">
+            <div class="col s12 m12 l6 ">
+                <div class="form card-panel">
+                    <div class="form-head blue white-text">
+                        <h4 class="flow-text">Заглавие на форма</h4>
+                    </div><!-- ./form-head -->
+                    <div class="form-body">
+                        <div class="input-field">
+                            <input id="first_name" type="text" class="validate"  required>
+                            <label for="first_name blue-text">Име</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="last_name" type="text" class="validate" required>
+                            <label for="last_name">Фамилия</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="nickname" type="text" class="validate" required>
+                            <label for="nickname">Никнейм</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate" required>
+                            <label for="email">Имейл</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="password" type="password" class="validate" required>
+                            <label for="password">Парола</label>
+                        </div><!-- ./input-field -->
+                    </div><!-- ./form-body -->
+                    <div class="form-footer">
+                        <a class="btn btn-large waves-effect blue">Регистрация</a>
+                    </div><!-- ./form-footer -->
+                </div><!-- ./form -->
+            </div><!-- ./col -->
+            <div class="col s12 m12 l6 ">
+                <div class="form card-panel">
+                    <div class="form-head blue white-text">
+                        <h4 class="flow-text">Заглавие на форма</h4>
+                    </div><!-- ./form-head -->
+                    <div class="form-body">
+                        <div class="input-field">
+                            <input id="first_name" type="text" class="validate"  required>
+                            <label for="first_name blue-text">Име</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="last_name" type="text" class="validate" required>
+                            <label for="last_name">Фамилия</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="nickname" type="text" class="validate" required>
+                            <label for="nickname">Никнейм</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate" required>
+                            <label for="email">Имейл</label>
+                        </div><!-- ./input-field -->
+                        <div class="input-field">
+                            <input id="password" type="password" class="validate" required>
+                            <label for="password">Парола</label>
+                        </div><!-- ./input-field -->
+                    </div><!-- ./form-body -->
+                    <div class="form-footer">
+                        <a class="btn btn-large waves-effect blue">Регистрация</a>
+                    </div><!-- ./form-footer -->
+                </div><!-- ./form -->
+            </div><!-- ./col -->
+        </div><!-- ./row -->
+        <h1>CHECKBOXES</h1>
+        <form action="#">
+            <p>
+                <input type="checkbox" id="test5"/>
+                <label for="test5">Red</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test6" checked="checked" />
+                <label for="test6">Yellow</label>
+            </p>
+            <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                <label for="filled-in-box">Filled in</label>
+            </p>
+            <p>
+                <input type="checkbox" id="indeterminate-checkbox" />
+                <label for="indeterminate-checkbox">Indeterminate Style</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+                <label for="test7">Green</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test8" disabled="disabled" />
+                <label for="test8">Brown</label>
+            </p>
+        </form>
 	</div><!-- ./container -->
 
 	<br>
