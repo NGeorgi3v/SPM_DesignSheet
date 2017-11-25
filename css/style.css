@@ -104,6 +104,14 @@ table th{
   .input-field .prefix.active {
     color: #2196F3;
   }
+  [type="checkbox"]:checked+label:before{
+    border-right: 2px solid #2196F3;
+    border-bottom: 2px solid #2196F3;
+  }
+  [type="checkbox"].filled-in:checked+label:after{
+    border: 2px solid #2196F3;
+    background-color: #2196F3;
+  }
 
 blockquote{
   border-left-color: #2196F3;
